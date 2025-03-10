@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <meta name="description" content="Portafolio web de David Bernal, especialista en Administración de Bases de Datos y Desarrollo Web Jr.">
+    <title>David Bernal | Portafolio Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css" >
+   
+</head>
+<body>
+    <!-- menu encabezado-->
+    <header role="banner" id="contenedor-encabezado" class="contenedor-encabezado">     
+            <div class="logo">
+                <a href="#inicio">DavDev</a>
+            </div>
+            <nav class="nav" id="nav" aria-label="Main Navigation">
+                <ul>
+                    <li> <a href="#inicio" onclick="seleccionar()">INICIO</a> </li>
+                    <li> <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a> </li>
+                    <li> <a href="#skills" onclick="seleccionar()">SKILLS</a> </li>
+                    <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a> </li>
+                    <li> <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a> </li>
+                    <li> <a href="#contacto" onclick="seleccionar()">CONTACTO</a> </li>                    
+                </ul>
+            </nav>
+            <button class="nav-responsive" onkeypress="mostrarOcultarMenu()"  onkeydown=="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+    </header>
+     <!-- CONTENDOR PRINCIPAL-->
+    <main>
+        <!-- contenido de secciones -->
+            <section id="inicio" class="inicio">
+                <article class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="img/img_DBD_11.jpg" alt="Sobre David Bernal Diaz" loading="lazy">
+                    </div>
+                    <h1>David Bernal Diaz</h1>
+                    <h2>Lic GI - Admin Base de Datos - Desarrolador Web Jr </h2>
+                    <div class="redes">
+                        <a href="#" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#" ><i class="fa-solid fa-rss"></i></a>
+                    </div>
+                </article>
+            </section>
+            <!-- seccion SOBRE MI-->
+            <section id="sobremi" class="sobremi">
+                <article class="contenedor-seccion">
+                    <h2>Sobre Mi</h2>
+                        <p><span>Hola, soy David Bernal.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quo veniam eveniet consequatur delectus laudantium velit, vel iste nam architecto nostrum in quos dignissimos dolor ex sunt ducimus eius recusandae?</p>
+
+                        <div class="fila">
+                            <!-- DATOS PERSONALES-->
+                            <div class="col">
+                                <h3> Datos Personales</h3>
+                                <ul>
+                                    <li> <strong> Edad: </strong> 35 Años </li>
+                                    <li> <strong> E-mail: </strong> davidbernaldiaz1@gmail.com </li>
+                                    <li> <strong> Website: </strong> www.example.com</li>
+                                    <li> <strong> Direccion: </strong> Toluca, Mexico </li>
+                                    <li> <strong> Cargo: </strong> <span> Administrador de BBDD / analista,tecnico SIG </span></li>
+                                </ul>
+                            </div>
+                            <!-- INTERESES-->
+                            <div class="col">
+                                <h3>Intereses</h3>
+                                <div class="contendero-intereses">
+                                    <div class="intereses">
+                                        <i class="fa-solid fa-book"></i>
+                                        <span>LECTURA</span>
+                                    </div>
+                                    <div class="intereses">
+                                        <i class="fa-solid fa-music"></i>
+                                        <span>MUSICA</span>
+                                    </div>
+                                    <div class="intereses">
+                                        <i class="fa-solid fa-person-hiking"></i>
+                                        <span>SENDERISMO</span>
+                                    </div>
+                                    <div class="intereses">
+                                        <i class="fa-solid fa-person-biking"></i>
+                                        <span>BICICLETA</span>
+                                    </div>
+                                    <div class="intereses">
+                                        <i class="fa-solid fa-laptop"></i>
+                                        <span>TECNOLOGIA</span>
+                                    </div>                           
+                                    <div class="intereses">
+                                        <i class="fa-solid fa-futbol"></i>
+                                        <span>SOCCER</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <button>
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </article>
+            </section>
+            <!-- SECCION SKILLS-->
+            <section id="skills" class="skills">
+                <div class="contenedor-seccion">
+                    <h2>Habilidades</h2>
+                    <div class="fila">
+                        <!-- habilidades tecnologicas -->
+                        <div class="col">
+                            <h3>Habilidades Tecnologicas</h3>
+
+                            <div class="skill">
+                                <span> JAVASCRIPT</span>
+                                <div class="barra-skill">
+                                    <div class="progreso javascript">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span> HTML & CSS</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>BASE DE DATOS - POSTGRES-MYSQL</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>JAVA</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>55%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>FRAMEWORK-SPRING</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>40%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>SOFTWARE SIG - QGIS -ARCGIS -UDGI</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>BASE DE DATOS - POSTGIS</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>MICROSOFT OFFICE - WORD-EXCEL-POWERPOINT</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- habilidades Profesionales -->
+                        <div class="col">
+                            <h3>Habilidades Profesionales</h3>
+
+                            <div class="skill">
+                                <span> ADAPTACION</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span> RESOLUCION DE PROBLEMAS</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>TRABAJO EN EQUIPO</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>AUTO-APRENDIZAJE</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>COMUNICACION ACERTIVA</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>DEDICACION</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <span>Administracion de BBDD</span>
+                                <div class="barra-skill">
+                                    <div class="progreso">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECCION CURRICULUM-->
+            <section id="curriculum" class="curriculum">
+                <div class="contendor-seccion">
+                    <h2>Curriculum</h2>
+                    <div class="fila">
+                        <div class="col izquierda">
+                            <h3> Educacion</h3>
+                            <div class="item izq">
+                                <h4>Licenciatura en Geoinformatica</h4>
+                                <span class="casa">Universidad Autónoma del Estado de México</span>
+                                <span class="fecha">2007-2012</span>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                            <div class="item izq">
+                                <h4>Curso</h4>
+                                <span class="casa">Universidad Autónoma del Estado de México</span>
+                                <span class="fecha">2007-2012</span>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+
+                            <div class="item izq">
+                                <h4>Diplomados</h4>
+                                <span class="casa">Universidad Autónoma del Estado de México</span>
+                                <span class="fecha">2007-2012</span>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                                <div class="conectori">
+                                    <div class="circuloi"></div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class="col derecha">
+                            <h3> Experiencia Laboral</h3>
+                            <div class="item der">
+                                <h4>Administrador de BBDD</h4>
+                                <span class="casa">Secretaria de Seguridad</span>
+                                <span class="fecha">2018- Actualidad</span>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+
+                            <div class="item der">
+                                <h4>Administrador de BBDD</h4>
+                                <span class="casa">Secretaria de Seguridad</span>
+                                <span class="fecha">2018- Actualidad</span>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+
+                            <div class="item der">
+                                <h4>Administrador de BBDD</h4>
+                                <span class="casa">Secretaria de Seguridad</span>
+                                <span class="fecha">2018- Actualidad</span>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                                <div class="conectord">
+                                    <div class="circulod"></div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>   
+            <!-- SECCION PORTAFOLIO -->
+            <section id="portafolio" class="portafolio">
+                <div class="contenido-seccion">
+                    <h2>Portafolio</h2>
+                    <div class="galeria">
+                        <div class="proyecto">
+                            <img src="img/abstract-5719221_1280.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+                        <div class="proyecto">
+                            <img src="img/design-1004044_1920.png" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+                        <div class="proyecto">
+                            <img src="img/abstract-6047465_1920.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+                        <div class="proyecto">
+                            <img src="img/circuit-7447920_1280.png" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+                        <div class="proyecto">
+                            <img src="img/earth-3537401_1280.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+                        <div class="proyecto">
+                            <img src="img/ink-303240_1920.png" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+
+                        <div class="proyecto">
+                            <img src="img/ink-303240_1920.png" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+
+                        <div class="proyecto">
+                            <img src="img/ink-303240_1920.png" alt="">
+                            <div class="overlay">
+                                <h3>Diseño Creativo</h3>
+                                <p>Fotografía</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECCION CONTACTO -->
+            <section id="contacto" class="contacto">
+                <div class="contenido-seccion">
+                    <h2>Contacto</h2>
+                    <div class="fila">
+                        <!-- Formulario -->
+                        <div class="col">
+                            <input type="text" placeholder="Tú Nombre">
+                            <input type="text" placeholder="Número telefónico">
+                            <input type="text" placeholder="Dirección de correo">
+                            <input type="text" placeholder="Tema">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            <button>
+                                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </div>
+                        <!-- Mapa -->
+                        <div class="col">
+                            <img src="img/loc.png" alt="">
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Nicaragua 159, San Rafael Mza
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                        Llamanos: 2384 - 4343443 
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        Email: cw@example.com
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba" aria-label="Volver al inicio">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#" aria-label="Facebook de David Bernal"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter de David Bernal"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Skype de David Bernal"><i class="fa-brands fa-skype"></i></a>
+            <a href="#" aria-label="LinkedIn de David Bernal"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="RSS de David Bernal"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script src="js/scrpit.js" async></script>
+</body>
+</html>
