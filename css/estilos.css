@@ -17,12 +17,12 @@ body{
     background-repeat: repeat; 
     background-size: cover;
     background-attachment: fixed;
-    padding: .5em 1em; /* Más espacio en dispositivos pequeños */
+    padding: .1em .5em; /* Más espacio en dispositivos pequeños */
 }
 /*  menu */
 header{
     width: 100%;
-    padding: 1em; 
+    padding: .5em; 
     top: 0;
     left: 0;
     z-index: 999;
@@ -42,14 +42,13 @@ header nav ul{
     font-size: 2em;
     color: rgba(230,214,45,.8);
     text-decoration: none;
-    margin: 0 2em;
+    margin: 0 1em;
     transition: color .3s, font-size .3s;
     -webkit-transition: color .3s, font-size .3s;
     -moz-transition: color .3s, font-size .3s;
     -ms-transition: color .3s, font-size .3s;
     -o-transition: color .3s, font-size .3s;
 }
-
 .contenedor-encabezado .logo a:hover{
     font-size: 2.1em;
     font-weight: bold;
@@ -75,26 +74,34 @@ header nav ul{
     font-weight: bold;
     border: 3px solid  rgba(230,214,45,.95);
     border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
 }
 
 .nav-responsive{
     background-color: rgba(230,214,45,.85);
     color: #fff;
-    padding: 1em;
+    padding: .85em;
     border-radius: 25%;
     cursor: pointer;
     display: none;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
 }
 .nav-responsive:hover{
     font-size: 1.1em;
 }
 main{
     z-index: 2;
-    padding: 2em 0;
+    padding: 1em 0;
     content: "";
     width: auto;
     height: auto;
-    margin: 0 auto;
+    margin: 2em auto;
     clear: both;
 }
 /*  SECCION INCIO */
@@ -103,29 +110,37 @@ main{
     color: #fff;
     display:flex;
     align-items: center;
-    padding: 1em;
-    margin: 0 4em;
+    padding: .4em;
+    margin: 0 .8em;
 }
 .inicio .contenido-banner{
     background-color: rgba(74, 122, 124, 0.75);
     max-width: 60%;
-    padding: 3em;
-    margin: 3.5em auto;
+    padding: 1em;
+    margin: 1em auto;
     text-align: center;
     border-radius: 20%;
-  }
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
 .inicio .contenido-banner img{
     border: 4px solid #fff;
     display: block;
-    width: 70%;
-    margin: auto; 
-    border-radius:  150%;
+    width: 60%;
+    margin: auto;
+    border-radius:  140%;
+    -webkit-border-radius:  140%;
+    -moz-border-radius:  140%;
+    -ms-border-radius:  140%;
+    -o-border-radius:  140%;
 }
 
 .inicio .contenido-banner h1{
-    font-size: 1.6em;
-    padding: .5em;
-    margin: .5em;
+    font-size: 1.2em;
+    padding: .4em;
+    margin: .4em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:  rgba(230,214,45, .9);
 }
@@ -142,16 +157,24 @@ main{
     border-radius: 100%;
     width: 2.2em;
     height: 2.2em;
-    margin: 1.5em .7em;
-    font-size: 1.2em;
+    margin: 1em .5em;
+    font-size: 1em;
     transition: .4s;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 .inicio .contenido-banner .redes a i{
-    margin: .55em auto;
+    margin: .5em auto;
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: rgba(230,214,45,.8);
-    font-size: 1.25em;
+    font-size: 1.1em;
     width: 2.25em;
     height: 2.25em;
 }
@@ -161,22 +184,22 @@ main{
     margin: 1em auto;
 }
 .sobremi h2, .skills h2, .curriculum h2, .portafolio h2, .contacto h2{
-    font-size: 1.95em;
+    font-size: 1.4em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    padding: 1em ;
-    letter-spacing: 3px;
+    padding: .5em ;
+    letter-spacing: 4px;
 }
 
 .sobremi .contenedor-seccion p{
-    font: 1.5em;
-    line-height: 150%;
-    margin-bottom: .8em;
-    letter-spacing: 1px;
+    font: .9em;
+    line-height: 130%;
+    margin-bottom: .4em;
+    text-align: justify;
 }
 
 .sobremi .contenedor-seccion p span{
-    color: rgba(230,214,45,.98);;
+    color: rgba(230,214,45,.98);
     font-weight: bold;
 }
 
@@ -189,33 +212,35 @@ main{
 }
 
 .sobremi .fila .col h3{
-    font-size: 1.75em;
+    font-size: 1.2em;
     font-family: 'Times New Roman', Times, serif;
-    margin: .8em .5em;
+    margin: .5em;
+    text-align: center;
+    font-weight: bold;
 }
 
 .sobremi .fila .col ul{
     list-style: none;
 }
 .sobremi .fila .col ul li{
-    margin: 1.2em 0;
+    margin: 1.1em 0;
     list-style: none;
 }
 
 .sobremi .fila .col ul li strong{
     display: inline-block;
     color: rgba(230,214,45,.8);
-    width: 5.5em;
+    width: 5em;
 }
 .sobremi .fila .col ul li span{
     background-color: rgba(230,214,45,.85);
-    padding: .9em;
+    padding: .6em;
     font-weight: bold;
-    border-radius: 1.4em;
-    -webkit-border-radius: 1.4em;
-    -moz-border-radius: 1.4em;
-    -ms-border-radius: 1.4em;
-    -o-border-radius: 1.4em;
+    border-radius: 1.2em;
+    -webkit-border-radius: 1.2em;
+    -moz-border-radius: 1.2em;
+    -ms-border-radius: 1.2em;
+    -o-border-radius: 1.2em;
 }
 
 .sobremi .fila .col .contendero-intereses{
@@ -226,27 +251,28 @@ main{
 .sobremi .fila .col .contendero-intereses .intereses{
     width: 25%;
     height: 25%;
+    flex-wrap: wrap;
     background-color: rgba(74, 122, 124, 0.7);
-    border-radius: 1.4em;
-    margin: 0 2em 1.6em 0;
+    border-radius: 1.2em;
+    margin: 0 1em .6em 0;
     display: flex;
     align-content: center;
     justify-content: center;
     transition: .2s;
-    padding: 1.1em;
-    -webkit-border-radius: 1.4em;
-    -moz-border-radius: 1.4em;
-    -ms-border-radius: 1.4em;
-    -o-border-radius: 1.4em;
+    padding: 1.2em;
+    -webkit-border-radius: 1.2em;
+    -moz-border-radius: 1.2em;
+    -ms-border-radius: 1.2em;
+    -o-border-radius: 1.2em;
 }
 .sobremi .fila .col .contendero-intereses .intereses i{
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin: .2em auto;
 }
 .sobremi .fila .col .contendero-intereses .intereses i span{
     margin: .2em auto;
     align-content: center;
-    padding: auto 1.8em;
+    padding: auto 1em;
 }
 .sobremi .fila .col .contendero-intereses .intereses:hover{
     background-color: rgba(230,214,45,.65);
@@ -258,9 +284,9 @@ main{
     border: 3px solid #fff;
     width: fit-content;
     display: block;
-    margin: 1.8em auto;
-    padding: 1.2em 1.5em;
-    font-size: 1.2em;
+    margin: 1.3em auto;
+    padding: 1em;
+    font-size: 1.1em;
     color: #fff;
     letter-spacing: 2px;
 }
@@ -273,10 +299,10 @@ main{
     height: 100%;
     background-color:rgba(230,214,45,.75);
     transition: 1s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .sobremi button:hover .overlay{
@@ -285,7 +311,7 @@ main{
 
 /*  SECCION HABILIDADES */
 .skills .contenedor-seccion{
-    max-width: 1100px;
+    width: 1100px;
     margin: auto;
 }
 
