@@ -44,3 +44,8 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+}
