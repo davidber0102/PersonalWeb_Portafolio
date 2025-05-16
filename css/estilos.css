@@ -9,7 +9,7 @@
 :root {
       --color-bg1: rgba(14, 21, 38, 0.6);
       --color-bg2: rgba(14,21,38,.8);
-      --color-primary: #79a5ed;
+      --color-primary: #7fa8eb;
       --color-accent: #22d3ee;
       --color-text: #f1f5f9;
       --color-muted: #94a3b8;
@@ -39,7 +39,8 @@ body{
     align-items: center;
     width: 100%;
     padding: 2rem;
-      border: 5px solid rgba(92, 108, 148, 0.9);
+    background-color: var(--color-primary);
+    opacity: .89;
     top: 0;
     left: 0;
     z-index: 999;
@@ -54,7 +55,7 @@ header nav ul{
 .contenedor-encabezado .logo a{
      font-size: 2rem;
       font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-text);
     text-decoration: none;
     margin: 0 1em;
     transition: color .3s, font-size .3s;
@@ -66,7 +67,8 @@ header nav ul{
 .contenedor-encabezado .logo a:hover{
     font-size: 2.1rem;
     font-weight: bold;
-    box-shadow: 0px 0px 10px 8px #d2d0d0;
+    box-shadow: 3px 3px 8px 8px #d0cccc;
+     border-radius: 8%;
 }
 .contenedor-encabezado nav ul li a{
     font-size: 1rem;
@@ -78,16 +80,15 @@ header nav ul{
 }
 
 .contenedor-encabezado nav ul li a:hover{
-    color: rgba(230,214,45,.95);
-    font-size: 1.1rem;
-    text-decoration: dashed;
+    font-size: 1.15rem;
     font-weight: bold;
-    border: 3px solid  rgba(230,214,45,.95);
+    border: 3px solid  #d0cccc;
     border-radius: 10%;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
+     box-shadow: 2px 2px 5px 5px #d0cccc; 
 }
 
 .nav-responsive{
@@ -122,7 +123,8 @@ main{
     align-items: center;
 }
 .inicio .contenido-banner{
-   background: linear-gradient(125deg, #2545ad, #058aa1);
+   background: linear-gradient(155deg, #9caac1, #6a9ced);
+   opacity:.8;
     max-width: 60%;
  padding: 3rem 1rem;
     margin: 1em auto;
