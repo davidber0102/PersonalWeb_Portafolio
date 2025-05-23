@@ -1,0 +1,31 @@
+/* ******************************************************* */
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_mix-blend-mode_cutout
+/* ******************************************************* */
+
+PALETA 1
+Fondo principal: #0A0F2C (azul marino muy oscuro, casi negro) – elegante y profesional.
+
+Color de acento 1: #00CFFF (cian brillante) – resalta elementos interactivos.
+
+Color de acento 2: #FF2D95 (rosa neón) – para botones o llamados a la acción.
+
+Texto principal: #FFFFFF (blanco) – buen contraste sobre el fondo oscuro.
+
+Texto secundario: #B0BEC5 (gris claro azulado) – para descripciones o textos menos importantes.
+
+Detalles técnicos o decorativos: #7C4DFF (púrpura neón) – para efectos visuales o íconos.
+
+
+/* ******************************************************* */
+PALETA 2
+Fondo principal: #121212 – negro suave, elegante y moderno.
+
+Color de acento 1: #2196F3 – azul profesional, no tan llamativo como el cian.
+
+Color de acento 2: #FF9800 – naranja cálido, ideal para botones o alertas.
+
+Texto principal: #E0E0E0 – gris muy claro, legible sobre fondo oscuro.
+
+Texto secundario: #9E9E9E – gris medio para contenido menos relevante.
+
+Elementos decorativos o hover: #64FFDA – verde aqua suave para interacción sutil.

@@ -118,7 +118,7 @@ main{
 /*  SECCION INCIO */
 .inicio, .sobremi, .skills, .curriculum, .portafolio, .contacto{
     height: 100vh;
-  color: var(--color-blanco);
+    color: var(--color-blanco);
     display:flex;
     align-items: center;
 }
@@ -153,7 +153,8 @@ main{
     letter-spacing: 5px;
     padding: .1em;
     margin: .1em;
-color: var(--color-blanco);
+color: var(--color-accent);
+mix-blend-mode: exclusion;
 font-style: oblique 40deg;
 font-weight: bold;
 }
