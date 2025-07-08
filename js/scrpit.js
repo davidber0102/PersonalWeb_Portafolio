@@ -1,51 +1,122 @@
-var menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
-    }
-}
+// ===============================
+// MENÚ RESPONSIVE
+// ===============================
 
-function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
-    document.getElementById("nav").classList = "";
+// Controla la visibilidad del menú en dispositivos móviles
+let menuVisible = false;
+
+// Muestra u oculta el menú de navegación
+function mostrarOcultarMenu() {
+  const nav = document.getElementById("nav");
+  if (menuVisible) {
+    nav.classList = "";
     menuVisible = false;
+  } else {
+    nav.classList = "responsive";
+    menuVisible = true;
+  }
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("bbdd");
-        habilidades[3].classList.add("java");
-        habilidades[4].classList.add("spring");
-        habilidades[5].classList.add("sig");
-        habilidades[6].classList.add("postigis");
-        habilidades[7].classList.add("ofice");
-        habilidades[8].classList.add("adapta");
-        habilidades[9].classList.add("resprob");
-        habilidades[10].classList.add("trabeq");
-        habilidades[11].classList.add("autoapren");
-        habilidades[12].classList.add("comunacer");
-        habilidades[13].classList.add("dedica");
-        habilidades[14].classList.add("admin");
+
+// Oculta el menú después de seleccionar una opción
+function seleccionar() {
+  document.getElementById("nav").classList = "";
+  menuVisible = false;
+}
+
+// Cierra el menú si se hace clic fuera de él (mejora de usabilidad)
+document.addEventListener("click", function (e) {
+  const nav = document.getElementById("nav");
+  const btn = document.querySelector(".nav-responsive");
+  if (
+    menuVisible &&
+    nav &&
+    !nav.contains(e.target) &&
+    btn &&
+    !btn.contains(e.target)
+  ) {
+    nav.classList = "";
+    menuVisible = false;
+  }
+});
+
+// ===============================
+// ANIMACIÓN DE HABILIDADES
+// ===============================
+
+// Aplica animaciones a las barras de habilidades cuando la sección es visible
+function efectoHabilidades() {
+  const skills = document.getElementById("skills");
+  if (!skills) return; // Previene errores si el elemento no existe
+
+  const distancia_skills =
+    window.innerHeight - skills.getBoundingClientRect().top;
+  if (distancia_skills >= 300) {
+    const habilidades = document.getElementsByClassName("progreso");
+    // Se recomienda validar la cantidad de elementos antes de acceder por índice
+    const clases = [
+      "javascript",
+      "htmlcss",
+      "bbdd",
+      "java",
+      "spring",
+      "sig",
+      "postigis",
+      "ofice",
+      "adapta",
+      "resprob",
+      "trabeq",
+      "autoapren",
+      "comunacer",
+      "dedica",
+      "admin",
+    ];
+    for (let i = 0; i < habilidades.length && i < clases.length; i++) {
+      habilidades[i].classList.add(clases[i]);
     }
+  }
 }
 
+// Detecta el scroll para activar la animación de habilidades
+window.addEventListener("scroll", efectoHabilidades);
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
-    efectoHabilidades();
-} 
+// ===============================
+// MODO OSCURO (opcional)
+// ===============================
 
-
+// Alterna la clase dark-mode en el body para cambiar el tema
 const toggleDarkMode = () => {
-    document.body.classList.toggle('dark-mode');
+  document.body.classList.toggle("dark-mode");
+};
+
+// ===============================
+// SCROLL SUAVE PARA ANCLAS
+// ===============================
+
+// Mejora la experiencia de navegación con scroll suave para enlaces internos
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+// ===============================
+// VALIDACIÓN BÁSICA DE FORMULARIO DE CONTACTO
+// ===============================
+
+const form = document.querySelector("form");
+if (form) {
+  form.addEventListener("submit", function (e) {
+    // Validación simple de campos requeridos
+    const nombre = form.querySelector("#nombre");
+    const email = form.querySelector("#email");
+    const mensaje = form.querySelector("#mensaje");
+    if (!nombre.value.trim() || !email.value.trim() || !mensaje.value.trim()) {
+      alert("Por favor, completa todos los campos obligatorios.");
+      e.preventDefault();
+    }
+  });
 }

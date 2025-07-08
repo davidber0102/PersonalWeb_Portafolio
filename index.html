@@ -16,6 +16,9 @@
             <div class="logo">
                   <img src="img/logo2-b96.png" alt="Logo de David Bernal Diaz" loading="lazy">
                 <a href="#inicio">&#60;Dav:Dev&#47;&#62;</a>
+                <button class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
             </div>
             <nav class="nav" id="nav" aria-label="Main Navigation">
                 <ul>
@@ -27,9 +30,7 @@
                     <li> <a href="#contacto" onclick="seleccionar()">CONTACTO</a> </li>                    
                 </ul>
             </nav>
-            <button class="nav-responsive" onkeypress="mostrarOcultarMenu()"  onkeydown="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </button>
+            
     </header>
      <!-- CONTENDOR PRINCIPAL-->
     <main>
@@ -46,7 +47,7 @@
                         <a href="#" ><i class="fa-brands fa-github"></i></a>
                         <a href="#" ><i class="fa-solid fa-rss"></i></a>
                     </div>
-                     <a href="#curriculum" class="cta-button" onclick="scrollToSection('projects')">Ver Proyectos</a>
+                     <a href="#curriculum" class="cta-button">Ver Proyectos</a>
                 </div>    
             </section>
             <!-- seccion SOBRE MI-->
@@ -76,7 +77,7 @@
                             <!-- INTERESES-->
                             <div class="col">
                                 <h3>Intereses</h3>
-                                <div class="contendero-intereses">
+                                <div class="contenedor-intereses">
                                     <div class="intereses">
                                         <i class="fa-solid fa-book"></i>
                                         <span>LECTURA</span>
@@ -104,10 +105,12 @@
                                 </div>
                             </div>
                         </div>
-                    <button>
-                        Descargar CV <i class="fa-solid fa-download"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    
+                        <a href="cv/DavidBernalCV.pdf" download class="btn-descargar" target="_blank">
+                            Descargar CV <i class="fa-solid fa-download"></i>
+                         <span class="overlay"></span>
+                        </a>
+                   
                 </article>
             </section>
             <!-- SECCION SKILLS-->
@@ -354,70 +357,36 @@
                     <h2>Portafolio</h2>
                     <div class="galeria">
                         <div class="proyecto">
-                            <h3>HTML, CSS Y JAVASCRIPT </h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
+                              <h3> QGIS -ARCGIS -UDGI </h3>                         
+                                <p>Fotografía</p>                        
+                        </div>                       
+                        <div class="proyecto">
+                              <h3> BASE DE DATOS </h3>                            
+                                <p>Fotografía</p>                      
+                        </div>                        
+                         <div class="proyecto overlay">
+                            <h3>HTML, CSS Y JAVASCRIPT </h3>                                 
+                                <p>Fotografía</p>                            
+                        </div>                        
+                        <div class="proyecto">
+                            <h3> JAVA</h3>                            
                                 <p>Fotografía</p>
-                            </div>
                         </div>
                         <div class="proyecto">
-                              <h3> BASE DE DATOS POSTGRESQL / POSTGIS </h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
+                            <h3> FRAMEWORK-SPRING / FRAMEWORK-SPRING BOOT </h3>                            
                                 <p>Fotografía</p>
-                            </div>
                         </div>
                         <div class="proyecto">
-                              <h3> BASE DE DATOS MYSQL</h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
+                            <h3> ANGULAR</h3>                           
                                 <p>Fotografía</p>
-                            </div>
                         </div>
                         <div class="proyecto">
-                              <h3> QGIS -ARCGIS -UDGI </h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
+                            <h3> INTELIGENCIA ARTIFICIAL</h3>                            
                                 <p>Fotografía</p>
-                            </div>
                         </div>
                         <div class="proyecto">
-                            <h3> JAVA</h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
+                              <h3> OTROS PROYECTOS</h3>                           
                                 <p>Fotografía</p>
-                            </div>
-                        </div>
-                        <div class="proyecto">
-                            <h3> FRAMEWORK-SPRING / FRAMEWORK-SPRING BOOT </h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
-                                <p>Fotografía</p>
-                            </div>
-                        </div>
-
-                        <div class="proyecto">
-                            <h3> ANGULAR</h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
-                                <p>Fotografía</p>
-                            </div>
-                        </div>
-
-                        <div class="proyecto">
-                            <h3> INTELIGENCIA ARTIFICIAL</h3>
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <h3>Diseño Creativo</h3>
-                                <p>Fotografía</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -428,33 +397,34 @@
                     <h2>Contacto</h2>
                     <div class="fila">
                         <!-- Formulario -->
-                        <form class="col" action="mailto:tuemail@example.com" method="post" enctype="text/plain">                           
-                            <input type="text" id="nombre" placeholder="Tú Nombre" required>                             
-                            <input type="tel"  id="telefono" placeholder="Número telefónico" required>                            
-                            <input type="email" id="email" placeholder="Dirección de correo" required>                        
-                            <input type="text"  id="tema" placeholder="Tema" required>                          
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required placeholder="Mensaje"></textarea>
-                            <button>
+                        <form class="col" action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+                            <!-- Agrega el atributo name a cada input para mejor manejo en JS y envío de formularios -->
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Número telefónico" required>
+                            <input type="email" id="email" name="email" placeholder="Dirección de correo" required>
+                            <input type="text" id="tema" name="tema" placeholder="Tema" required>
+                            <textarea id="mensaje" name="mensaje" cols="30" rows="10" required placeholder="Mensaje"></textarea>
+                            <button type="submit">
                                 Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                                 <span class="overlay"></span>
                             </button>
                         </form>
                         <!-- Mapa -->
                         <div class="col">
-                            <img src="img/loc.png" alt="">
+                            <img src="img/loc.png" alt="Ubicación en mapa">
                             <div class="info">
                                 <ul>
                                     <li>
                                         <i class="fa-solid fa-location-dot"></i>
-                                        Nicaragua 159, San Rafael Mza
+                                        Toluca, Estado de México
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-mobile-screen"></i>
-                                        Llamanos: 2384 - 4343443 
+                                        Llámanos: 722 123 4567
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-envelope"></i>
-                                        Email: cw@example.com
+                                        Email: davidbernaldiaz1@gmail.com
                                     </li>
                                 </ul>
                             </div>
