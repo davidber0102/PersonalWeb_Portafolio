@@ -120,3 +120,59 @@ if (form) {
     }
   });
 }
+
+// Función para detectar cuando un elemento entra en pantalla
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85
+  );
+}
+
+// Añadir clase 'visible' a secciones cuando entran en viewport
+function handleScrollAnimation() {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    if (isInViewport(section)) {
+      section.classList.add('visible');
+    }
+  });
+}
+
+// Botón "Ir arriba" dinámico
+const btnUp = document.createElement('button');
+btnUp.innerHTML = '↑';
+btnUp.id = 'btn-up';
+document.body.appendChild(btnUp);
+
+btnUp.style.position = 'fixed';
+btnUp.style.bottom = '30px';
+btnUp.style.right = '30px';
+btnUp.style.padding = '10px 15px';
+btnUp.style.fontSize = '1.5rem';
+btnUp.style.border = 'none';
+btnUp.style.borderRadius = '50%';
+btnUp.style.backgroundColor = '#0057b7';
+btnUp.style.color = '#fff';
+btnUp.style.cursor = 'pointer';
+btnUp.style.opacity = '0';
+btnUp.style.transition = 'opacity 0.3s ease';
+btnUp.style.zIndex = '1000';
+
+// Mostrar/ocultar botón según scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    btnUp.style.opacity = '1';
+  } else {
+    btnUp.style.opacity = '0';
+  }
+});
+
+// Scroll suave al hacer clic en botón
+btnUp.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Ejecutar animación en scroll
+window.addEventListener('scroll', handleScrollAnimation);
+window.addEventListener('load', handleScrollAnimation);
